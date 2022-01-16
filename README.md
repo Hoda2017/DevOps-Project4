@@ -1,5 +1,5 @@
 <include a CircleCI status badge, here>
-
+[![CircleCI](https://circleci.com/gh/Hoda2017/DevOps-Project4/tree/main.svg?style=svg)](https://circleci.com/gh/Hoda2017/DevOps-Project4/tree/main)
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
