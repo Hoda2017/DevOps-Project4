@@ -1,19 +1,25 @@
-<paste log output from Docker prediction, here>
-
-[2022-01-15 18:49:32,365] INFO in app: JSON payload: 
+[2022-01-16 12:42:04,399] INFO in app: JSON payload: 
 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
 
-[2022-01-15 18:49:32,381] INFO in app: Inference payload DataFrame: 
+[2022-01-16 12:42:04,412] INFO in app: Inference payload DataFrame: 
 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
+   CHAS  ...  LSTAT
 
-0     0  6.575  296.0     15.3  396.9   4.98
+0     0  ...   4.98
 
-[2022-01-15 18:49:32,394] INFO in app: Scaling Payload: 
 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
+[1 rows x 6 columns]
 
-0     0  6.575  296.0     15.3  396.9   4.98
+[2022-01-16 12:42:04,429] INFO in app: Scaling Payload: 
 
-172.17.0.1 - - [15/Jan/2022 18:49:32] "POST /predict HTTP/1.1" 200 -
+   CHAS  ...  LSTAT
+
+0     0  ...   4.98
+
+
+[1 rows x 6 columns]
+
+[2022-01-16 12:42:04,434] INFO in app: Predicted output: [20.35373177134412]
+
+172.17.0.1 - - [16/Jan/2022 12:42:04] "POST /predict HTTP/1.1" 200 -
